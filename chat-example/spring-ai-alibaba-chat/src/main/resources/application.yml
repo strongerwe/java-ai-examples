@@ -11,3 +11,7 @@ spring:
       chat:
         options:
           model: qwen-max
+    chat:
+      observations:
+        log-prompt: true
+        log-completion: true

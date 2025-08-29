@@ -1,0 +1,10 @@
+### stream接口
+GET http://localhost:8001/chat/stream
+
+### call接口
+GET http://localhost:8001/chat/call
+
+### call2接口
+GET http://localhost:8001/chat/call2
+
+

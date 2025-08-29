@@ -28,3 +28,4 @@ replay_pid*
 /chat-example/spring-ai-alibaba-chat/target/
 /chat-example/spring-ai-ollama-chat/target/
 /chat-example/spring-ai-deepseek-chat/target/
+/chat-example/langchain4j-ai-chat/target/
