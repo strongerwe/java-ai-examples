@@ -95,22 +95,22 @@ curl --location 'http://127.0.0.1:11434/v1/chat/completions' \
 ```
 ### 2.2 code-example
 
-### a. langchain4j-ai-chat
+#### a. langchain4j-ai-chat
 
 > 基于langchain4j框架实现chat示例
 
-### b. spring-ai-alibaba-chat
+#### b. spring-ai-alibaba-chat
 
 > 基于spring-ai-alibaba框架实现chat示例
 
-### c. spring-ai-chat
+#### c. spring-ai-chat
 
 > 基于spring-ai框架实现chat示例
 
-### d. spring-ai-deepseek-chat
+#### d. spring-ai-deepseek-chat
 
 > 基于spring-ai对接deepseek实现chat示例
 
-### e. spring-ai-ollama-chat
+#### e. spring-ai-ollama-chat
 
 > 基于spring-ai对接ollama实现chat示例
