@@ -10,6 +10,12 @@
     <description>
         java-ai-examples 基于Java学习AI对接示例
     </description>
+    <modules>
+        <module>chat-example/spring-ai-chat</module>
+        <module>chat-example/spring-ai-alibaba-chat</module>
+        <module>chat-example/spring-ai-deepseek-chat</module>
+        <module>chat-example/spring-ai-ollama-chat</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

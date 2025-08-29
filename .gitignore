@@ -23,3 +23,8 @@
 hs_err_pid*
 replay_pid*
 /.idea/
+/key.env
+/chat-example/spring-ai-chat/target/
+/chat-example/spring-ai-alibaba-chat/target/
+/chat-example/spring-ai-ollama-chat/target/
+/chat-example/spring-ai-deepseek-chat/target/
