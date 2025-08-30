@@ -1,0 +1,16 @@
+server:
+  port: 8001
+
+spring:
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API_KEY}
+      chat:
+        options:
+          model: qwen-max
+    memory:
+      redis:
+        host: localhost
+        port: 6379
+        password: ${LOCAL_REDIS_PASSWORD}
+        timeout:  5000

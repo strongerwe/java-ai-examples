@@ -30,3 +30,5 @@ replay_pid*
 /chat-example/spring-ai-deepseek-chat/target/
 /chat-example/langchain4j-ai-chat/target/
 /storage-example/spring-ai-memory-storage/target/
+/storage-example/spring-ai-mysql-storage/target/
+/storage-example/spring-ai-redis-storage/target/

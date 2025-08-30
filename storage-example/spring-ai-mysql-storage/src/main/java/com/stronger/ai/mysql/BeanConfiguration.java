@@ -22,7 +22,9 @@ public class BeanConfiguration {
     private ParamConfig paramConfig;
 
     /**
-     * mysql 存储
+     * mysql 存储（这里参考spring-ai-alibaba-starter-memory-jdbc手写了一遍）
+     * <p>
+     * 如果想要自己重新设计数据库存储表ai_chat_memory这里可以参考重写一份，源码很简单就是对应的curd
      *
      * @return {@link MysqlChatMemoryRepository }
      */
@@ -38,4 +40,22 @@ public class BeanConfiguration {
                 .jdbcTemplate(jdbcTemplate)
                 .build();
     }
+
+    /**
+     * 阿里巴巴mysql存储 (这里是直接使用：spring-ai-alibaba-starter-memory-jdbc)
+     *
+     * @return {@link com.alibaba.cloud.ai.memory.jdbc.MysqlChatMemoryRepository }
+     */
+//    @Bean
+//    public com.alibaba.cloud.ai.memory.jdbc.MysqlChatMemoryRepository alMysqlChatMemoryRepository() {
+//        DriverManagerDataSource dataSource = new DriverManagerDataSource();
+//        dataSource.setDriverClassName(paramConfig.getMysqlDriverClassName());
+//        dataSource.setUrl(paramConfig.getMysqlJdbcUrl());
+//        dataSource.setUsername(paramConfig.getMysqlUsername());
+//        dataSource.setPassword(paramConfig.getMysqlPassword());
+//        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
+//        return com.alibaba.cloud.ai.memory.jdbc.MysqlChatMemoryRepository.mysqlBuilder()
+//                .jdbcTemplate(jdbcTemplate)
+//                .build();
+//    }
 }
