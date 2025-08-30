@@ -1,0 +1,12 @@
+### stream接口
+GET http://localhost:8001/chat/stream
+
+### call接口
+GET http://localhost:8001/chat/call?question=2+2等于多少
+
+### call接口
+GET http://localhost:8001/chat/call?question=再加3等于多少
+
+
+### call接口
+GET http://localhost:8001/chat/messages
