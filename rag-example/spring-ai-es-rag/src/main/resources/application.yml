@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: vector-elasticsearch
+
+  ai:
+    openai:
+      api-key: ${DASHSCOPE_API_KEY}
+      base-url: https://dashscope.aliyuncs.com/compatible-mode
+      chat:
+        options:
+          model: qwen-max
+      embedding:
+        options:
+          model: text-embedding-v1
+    vectorstore:
+      elasticsearch:
+        initialize-schema: true
+        index-name: es-index-name
+        similarity: cosine
+        dimensions: 1536
+  elasticsearch:
+    uris: https://127.0.0.1:9200
+    username: elastic
+    password: elastic

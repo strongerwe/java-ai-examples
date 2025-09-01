@@ -1,0 +1,8 @@
+### stream接口
+GET http://localhost:8001/chat/stream
+
+### call接口
+GET http://localhost:8001/chat/call
+
+### 添加知识库接口
+POST http://localhost:8001/rag/add
