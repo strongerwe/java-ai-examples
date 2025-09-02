@@ -93,24 +93,55 @@ curl --location 'http://127.0.0.1:11434/v1/chat/completions' \
     ]
 }'
 ```
-### 2.2 code-example
+## 3. 工程目录
 
-#### a. langchain4j-ai-chat
+> 持续更新...
 
-> 基于langchain4j框架实现chat示例
+### 3.1. chat-example目录
+```markdown
+|- chat-example
+    |- langchain4j-ai-chat          # 基于langchain4j框架实现chat示例
+    |- spring-ai-alibaba-chat       # 基于spring-ai-alibaba框架实现chat示例
+    |- spring-ai-chat               # 基于spring-ai框架实现chat示例
+    |- spring-ai-deepseek-chat      # 基于spring-ai框架实现chat示例
+    |- spring-ai-ollama-chat        # 基于spring-ai对接ollama实现chat示例
+```
 
-#### b. spring-ai-alibaba-chat
+### 3.2. mcp-example目录
+```markdown
+|- mcp-example
+    |- client
+        |- spring-ai-simple-mcp-client  # 基于spring-ai实现mcp客户端示例
+    |- server
+        |- spring-ai-simple-mcp-server  # 基于spring-ai实现mcp服务端示例
+```
 
-> 基于spring-ai-alibaba框架实现chat示例
+### 3.3. prompt-example目录
+```markdown
+|- prompt-example
+    |- spring-ai-alibaba-prompt         # 基于spring-ai-alibaba框架实现prompt示例
+    |- spring-ai-ollama-prompt          # 基于spring-ai对接ollama实现prompt示例
+```
 
-#### c. spring-ai-chat
+### 3.4. rag-example目录
+```markdown
+|- rag-example
+    |- langchain4j-ai-memory-rag        # 基于langchain4j框架实现内存存储rag示例
+    |- spring-ai-es-rag                 # 基于spring-ai对接elasticsearch实现rag示例
+    |- spring-ai-memory-rag             # 基于spring-ai对接内存实现rag示例
+```
 
-> 基于spring-ai框架实现chat示例
+### 3.5. storage-example目录
+```markdown
+|- storage-example
+    |- spring-ai-memory-storage         # 基于spring-ai对接内存实现storage示例
+    |- spring-ai-mysql-storage          # 基于spring-ai对接mysql实现storage示例
+    |- spring-ai-redis-storage          # 基于spring-ai对接redis实现storage示例
+```
 
-#### d. spring-ai-deepseek-chat
-
-> 基于spring-ai对接deepseek实现chat示例
-
-#### e. spring-ai-ollama-chat
-
-> 基于spring-ai对接ollama实现chat示例
+### 3.6. tools-example目录
+```markdown
+|- tool-example
+    |- spring-ai-alibaba-baidutranslate-tools           # 基于spring-ai-alibaba框架实现tool示例
+    |- spring-ai-time-tools                             # 基于spring-ai对接时间工具示例-tools          
+```
