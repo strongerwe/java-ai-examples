@@ -26,6 +26,8 @@
         <module>tools-example/spring-ai-alibaba-baidutranslate-tools</module>
         <module>prompt-example/spring-ai-alibaba-prompt</module>
         <module>prompt-example/spring-ai-ollama-prompt</module>
+        <module>mcp-example/server/spring-ai-simple-mcp-server</module>
+        <module>mcp-example/client/spring-ai-simple-mcp-client</module>
     </modules>
 
     <properties>

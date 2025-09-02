@@ -38,3 +38,6 @@ replay_pid*
 /tools-example/spring-ai-time-tools/target/
 /prompt-example/spring-ai-alibaba-prompt/target/
 /prompt-example/spring-ai-ollama-prompt/target/
+/tools-example/spring-ai-alibaba-baidutranslate-tools/target/
+/mcp-example/client/spring-ai-simple-mcp-client/target/
+/mcp-example/server/spring-ai-simple-mcp-server/target/

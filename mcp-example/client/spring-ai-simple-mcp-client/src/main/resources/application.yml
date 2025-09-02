@@ -1,0 +1,27 @@
+server:
+  port: 8001
+
+spring:
+  shell:
+    interactive:
+      enabled: true
+  application:
+    name: spring-ai-simple-mcp-client
+  ai:
+    openai:
+      api-key: ${DASHSCOPE_API_KEY}
+      base-url: https://dashscope.aliyuncs.com/compatible-mode
+      chat:
+        options:
+          model: qwen-max
+    mcp:
+      client:
+        enabled: true
+        name: spring-ai-simple-mcp-server
+        version: 1.0.0
+        request-timeout: 600s
+        type: ASYNC  # or ASYNC for reactive applications
+        sse:
+          connections:
+            server1:
+              url: http://127.0.0.1:7001 # 本地
