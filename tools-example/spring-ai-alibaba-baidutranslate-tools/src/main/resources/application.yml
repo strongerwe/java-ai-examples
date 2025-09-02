@@ -1,0 +1,17 @@
+server:
+  port: 8001
+
+# https://fanyi-api.baidu.com/manage/developer
+spring:
+  application:
+    name: spring-ai-alibaba-baidutranslate-tools
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API_KEY}
+    alibaba:
+      toolcalling:
+        baidu:
+          translate:
+            enabled: true
+            app-id: ${BAIDU_FY_APP_ID}
+            secret-key: ${BAIDU_FY_API_KEY}
