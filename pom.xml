@@ -19,6 +19,12 @@
         <module>storage-example/spring-ai-memory-storage</module>
         <module>storage-example/spring-ai-mysql-storage</module>
         <module>storage-example/spring-ai-redis-storage</module>
+        <module>rag-example/spring-ai-memory-rag</module>
+        <module>rag-example/langchain4j-ai-memory-rag</module>
+        <module>rag-example/spring-ai-es-rag</module>
+        <module>tools-example/spring-ai-time-tools</module>
+        <module>prompt-example/spring-ai-alibaba-prompt</module>
+        <module>prompt-example/spring-ai-ollama-prompt</module>
     </modules>
 
     <properties>
@@ -75,7 +81,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
 
     <repositories>
         <repository>

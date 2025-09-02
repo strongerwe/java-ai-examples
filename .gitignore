@@ -32,3 +32,9 @@ replay_pid*
 /storage-example/spring-ai-memory-storage/target/
 /storage-example/spring-ai-mysql-storage/target/
 /storage-example/spring-ai-redis-storage/target/
+/rag-example/spring-ai-memory-rag/target/
+/rag-example/langchain4j-ai-memory-rag/target/
+/rag-example/spring-ai-es-rag/target/
+/tools-example/spring-ai-time-tools/target/
+/prompt-example/spring-ai-alibaba-prompt/target/
+/prompt-example/spring-ai-ollama-prompt/target/
