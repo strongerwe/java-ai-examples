@@ -112,8 +112,10 @@ curl --location 'http://127.0.0.1:11434/v1/chat/completions' \
 |- mcp-example
     |- client
         |- spring-ai-simple-mcp-client  # 基于spring-ai实现mcp客户端示例
+        |- spring-ai-nacos-mcp-client   # 基于spring-ai实现mcp客户端对接Nacos3示例
     |- server
         |- spring-ai-simple-mcp-server  # 基于spring-ai实现mcp服务端示例
+        |- spring-ai-nacos-mcp-server   # 基于spring-ai实现mcp服务端对接Nacos3示例
 ```
 
 ### 3.3. prompt-example目录
