@@ -41,3 +41,5 @@ replay_pid*
 /tools-example/spring-ai-alibaba-baidutranslate-tools/target/
 /mcp-example/client/spring-ai-simple-mcp-client/target/
 /mcp-example/server/spring-ai-simple-mcp-server/target/
+/mcp-example/server/spring-ai-nacos-mcp-server/target/
+/mcp-example/client/spring-ai-nacos-mcp-client/target/

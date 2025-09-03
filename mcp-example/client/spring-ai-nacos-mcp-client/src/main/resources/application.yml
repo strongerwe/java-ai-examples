@@ -1,0 +1,37 @@
+server:
+  port: 8001
+spring:
+  shell:
+    interactive:
+      enabled: true
+  application:
+    name: spring-ai-simple-mcp-client
+  ai:
+    openai:
+      api-key: ${DASHSCOPE_API_KEY}
+      base-url: https://dashscope.aliyuncs.com/compatible-mode
+      chat:
+        options:
+          model: qwen-max
+    mcp:
+      client:
+        enabled: true
+        name: spring-ai-nacos-mcp-server
+        version: 1.0.0
+        request-timeout: 600s
+        type: ASYNC  # or ASYNC for reactive applications
+
+    alibaba:
+      mcp:
+        nacos:
+          namespace: f4a96a00-2abd-4c16-9168-c1b9bd72f6f2
+          server-addr: 127.0.0.1:8848
+          username: nacos
+          password: nacos
+          client:
+            enabled: true
+            sse:
+              connections:
+                server1:
+                  service-name: spring-ai-nacos-mcp-server
+                  version: 1.0.0

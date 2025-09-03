@@ -25,7 +25,10 @@ public class ChatController {
     }
 
     @GetMapping("/chat/call")
-    public String call(@RequestParam(value = "question", defaultValue = "你好，你是什么大模型？") String question) {
+    public String call(
+            @RequestParam(value = "question",
+                    defaultValue = "你好，你是什么大模型？")
+            String question) {
         return chatClient.prompt(question).call().content();
     }
 

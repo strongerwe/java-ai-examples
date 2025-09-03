@@ -27,7 +27,9 @@
         <module>prompt-example/spring-ai-alibaba-prompt</module>
         <module>prompt-example/spring-ai-ollama-prompt</module>
         <module>mcp-example/server/spring-ai-simple-mcp-server</module>
+        <module>mcp-example/server/spring-ai-nacos-mcp-server</module>
         <module>mcp-example/client/spring-ai-simple-mcp-client</module>
+        <module>mcp-example/client/spring-ai-nacos-mcp-client</module>
     </modules>
 
     <properties>
@@ -57,7 +59,7 @@
             </dependency>
             <!-- Spring Boot End -->
 
-            <!-- Spring AI -->
+            <!-- Spring AI 版本声明 -->
             <dependency>
                 <groupId>org.springframework.ai</groupId>
                 <artifactId>spring-ai-bom</artifactId>
