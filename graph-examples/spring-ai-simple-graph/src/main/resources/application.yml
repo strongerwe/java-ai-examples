@@ -1,0 +1,12 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: spring-ai-simple-graph
+  ai:
+    openai:
+      api-key: ${DASHSCOPE_API_KEY}
+      base-url: https://dashscope.aliyuncs.com/compatible-mode
+      chat:
+        options:
+          model: qwen-max
