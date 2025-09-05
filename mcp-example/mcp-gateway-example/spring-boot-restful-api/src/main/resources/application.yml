@@ -1,0 +1,26 @@
+server:
+  port: 6001
+
+spring:
+  application:
+    name: spring-boot-restful-api
+
+  cloud:
+    # nacos注册中心配置
+    nacos:
+      discovery:
+        username: local
+        password: local
+        server-addr: 127.0.0.1:8848
+        namespace: local
+## 配置swagger文档的访问路径
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        exclude: "*"
