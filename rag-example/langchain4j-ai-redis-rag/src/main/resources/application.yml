@@ -1,0 +1,44 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: langchain4j-ai-redis-rag
+
+# 这里配置的是阿里云百炼API
+dashscope:
+  base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
+  model-name: qwen-plus
+  api-key: ${DASHSCOPE_API_KEY}
+  embedding-model: text-embedding-v3
+
+# api配置
+langchain4j:
+  open-ai:
+    chat-model:
+      base-url: ${dashscope.base-url}
+      api-key: ${dashscope.api-key}
+      model-name: ${dashscope.model-name}
+      # 开启请求API接口日志
+      log-requests: true
+      # 开启响应API接口日志
+      log-responses: true
+    streaming-chat-model:
+      base-url: ${dashscope.base-url}
+      api-key: ${dashscope.api-key}
+      model-name: ${dashscope.model-name}
+      log-requests: true
+      log-responses: true
+    embedding-model:
+      base-url: ${dashscope.base-url}
+      api-key: ${dashscope.api-key}
+      model-name: ${dashscope.embedding-model}
+      # 开启日志
+      log-requests: true
+      log-responses: true
+#      max-segments-per-batch: 10
+  community:
+    redis:
+      host: localhost
+      port: 6379
+#      password: password
