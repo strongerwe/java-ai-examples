@@ -1,0 +1,20 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: spring-ai-pgvector-rag
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/postgres
+    username: postgres
+    password: ${POSTGRES_PASSWORD}
+
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API_KEY}
+    vectorstore:
+      pgvector:
+        dimensions: 1536
+        index-type: hnsw
+        distance-type: cosine_distance
+
