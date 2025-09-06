@@ -30,6 +30,13 @@
         <module>mcp-example/server/spring-ai-nacos-mcp-server</module>
         <module>mcp-example/client/spring-ai-simple-mcp-client</module>
         <module>mcp-example/client/spring-ai-nacos-mcp-client</module>
+        <module>graph-examples/spring-ai-simple-graph</module>
+        <module>graph-examples/spring-ai-human-node-graph</module>
+        <module>mcp-example/mcp-gateway-example/spring-boot-restful-api</module>
+        <module>mcp-example/mcp-gateway-example/spring-ai-mcp-server-gateway</module>
+        <module>rag-example/langchain4j-ai-redis-rag</module>
+        <module>rag-example/spring-ai-redis-rag</module>
+        <module>rag-example/spring-ai-pavector-rag</module>
     </modules>
 
     <properties>
@@ -46,6 +53,13 @@
         <!-- mysql 驱动 -->
         <mysql.version>8.0.33</mysql.version>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
 
     <dependencyManagement>
         <dependencies>

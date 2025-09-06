@@ -43,3 +43,8 @@ replay_pid*
 /mcp-example/server/spring-ai-simple-mcp-server/target/
 /mcp-example/server/spring-ai-nacos-mcp-server/target/
 /mcp-example/client/spring-ai-nacos-mcp-client/target/
+/graph-examples/spring-ai-simple-graph/target/
+/mcp-example/mcp-gateway-example/spring-ai-mcp-server-gateway/target/
+/mcp-example/mcp-gateway-example/spring-boot-restful-api/target/
+/rag-example/langchain4j-ai-redis-rag/target/
+/rag-example/spring-ai-redis-rag/target/
